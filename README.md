@@ -107,7 +107,7 @@ Highlights the technologies and tools currently being used across Android and we
 
 ### Projects
 
-Showcases practical projects built while learning and experimenting with software development.
+Showcases practical projects built while learning, experimenting, and turning ideas into working software.
 
 Current projects include:
 
@@ -134,6 +134,18 @@ A simple Android application focused on UI interaction, button handling, and sta
 **Technologies:**
 
 `Kotlin` `XML` `ConstraintLayout` `Android`
+
+#### Android Bottom Navigation
+
+A single-activity Android application demonstrating bottom navigation between Home, Search, and Bookmark screens using Fragments and the Android Navigation Component.
+
+The project uses a `NavGraph`, `NavHostFragment`, `NavController`, and `BottomNavigationView` to manage navigation between three screens.
+
+**Technologies:**
+
+`Kotlin` `Android` `Navigation Component` `Fragments` `BottomNavigationView` `ConstraintLayout`
+
+**GitHub:** https://github.com/pabloesc1999/android-bottom-navigation
 
 ### Contact
 
@@ -313,15 +325,4 @@ Android Developer focused on Kotlin and modern software development.
 
 * **Portfolio:** https://shaban-portfolio-tau.vercel.app/
 * **GitHub:** https://github.com/pabloesc1999
-* **LinkedIn:** https://www.linkedin.com/in/m-shaban-saeed-80b5a2316/
-* **Email:** [shabansaeed1999@gmail.com](mailto:shabansaeed1999@gmail.com)
-
----
-
-<div align="center">
-
-### `BUILD // LEARN // IMPROVE`
-
-Built with Next.js, TypeScript, and Tailwind CSS.
-
-</div>
+* **LinkedIn:** https://www.linkedin.com/in/m-shaba*
