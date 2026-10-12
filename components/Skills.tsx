@@ -1,61 +1,66 @@
 import Reveal from "@/components/Reveal";
 
-const skills = [
+const skillCategories = [
 	{
 		number: "01",
-		name: "KOTLIN",
-		category: "Android",
-		familiarity: "Established",
-		level: 4,
+		name: "Android & Software Development",
+		skills: [
+			"Kotlin",
+			"Android development",
+			"Java",
+			"XML layouts",
+			"Git / GitHub",
+			"Software lifecycle",
+			"Interface design",
+			"Codebase navigation",
+			"Technical problem-solving",
+		],
 	},
 	{
 		number: "02",
-		name: "ANDROID",
-		category: "Mobile Development",
-		familiarity: "Established",
-		level: 4,
+		name: "Web Development",
+		skills: ["Next.js", "TypeScript", "Tailwind CSS"],
 	},
 	{
 		number: "03",
-		name: "JAVA",
-		category: "Programming",
-		familiarity: "Practiced",
-		level: 3,
+		name: "Generative AI & Prompt Engineering",
+		skills: [
+			"Generative AI applications",
+			"Prompt engineering",
+			"Enterprise AI use cases",
+			"AI-assisted proposal workflows",
+			"Technical writing",
+		],
 	},
 	{
 		number: "04",
-		name: "XML",
-		category: "Android UI",
-		familiarity: "Practiced",
-		level: 3,
+		name: "Data Analytics",
+		skills: [
+			"Python",
+			"Financial data analysis",
+			"AI-assisted data analysis",
+			"Data-driven decisions",
+			"Analytical workflows",
+		],
 	},
 	{
 		number: "05",
-		name: "GIT / GITHUB",
-		category: "Version Control",
-		familiarity: "Practiced",
-		level: 3,
+		name: "Cybersecurity Fundamentals",
+		skills: [
+			"Threat identification",
+			"Security risk assessment",
+			"Foundational security protocols",
+		],
 	},
 	{
 		number: "06",
-		name: "NEXT.JS",
-		category: "Web Development",
-		familiarity: "Developing",
-		level: 2,
-	},
-	{
-		number: "07",
-		name: "TYPESCRIPT",
-		category: "Programming",
-		familiarity: "Developing",
-		level: 2,
-	},
-	{
-		number: "08",
-		name: "TAILWIND CSS",
-		category: "UI Development",
-		familiarity: "Developing",
-		level: 2,
+		name: "Business & Technology Strategy",
+		skills: [
+			"AI in business operations",
+			"Private equity",
+			"Technology-driven value creation",
+			"Business development",
+		],
 	},
 ];
 
@@ -92,34 +97,26 @@ export default function Skills() {
 					</p>
 				</div>
 
-				<div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-					{skills.map((skill) => (
+				<div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+					{skillCategories.map((category) => (
 						<article
-							key={skill.number}
-							className="group min-h-48 rounded-lg border border-white/10 bg-[#0a0e10]/75 p-5 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-300/35 hover:bg-[#0d1315]/90 motion-reduce:transform-none sm:p-6"
+							key={category.number}
+							className="group rounded-lg border border-white/10 bg-[#0a0e10]/75 p-5 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-300/35 hover:bg-[#0d1315]/90 motion-reduce:transform-none sm:p-6"
 						>
-							<div className="flex items-center justify-between">
-								<span className="font-mono text-xs text-cyan-300/80">{skill.number}</span>
-								<span
-									className="font-mono text-[10px] tracking-wider text-zinc-600"
-									aria-label={`${skill.familiarity} familiarity`}
-								>
-									<span className="sr-only">{skill.familiarity}</span>
-									<span className="flex items-center gap-1" aria-hidden="true">
-										{[0, 1, 2, 3].map((segment) => (
-											<span
-												key={segment}
-												className={`h-1 w-3 rounded-full ${segment < skill.level ? "bg-cyan-300/60" : "bg-white/10"}`}
-											/>
-										))}
-									</span>
-								</span>
+							<div className="flex items-center gap-3">
+								<span className="font-mono text-xs text-cyan-300/80">{category.number}</span>
+								<h3 className="text-base font-semibold leading-snug text-zinc-100 transition-colors group-hover:text-cyan-100 sm:text-lg">
+									{category.name}
+								</h3>
 							</div>
-
-							<h3 className="mt-8 text-lg font-semibold tracking-wide text-zinc-100 transition-colors group-hover:text-cyan-100">
-								{skill.name}
-							</h3>
-							<p className="mt-2 text-sm text-zinc-500">{skill.category}</p>
+							<ul className="mt-5 grid grid-cols-2 gap-x-3 gap-y-2 text-sm leading-5 text-zinc-400">
+								{category.skills.map((skill) => (
+									<li key={skill} className="flex items-start gap-2">
+										<span className="mt-2 size-1 shrink-0 rounded-full bg-cyan-300/50" aria-hidden="true" />
+										<span>{skill}</span>
+									</li>
+								))}
+							</ul>
 						</article>
 					))}
 				</div>
@@ -129,11 +126,11 @@ export default function Skills() {
 					className="mt-8 flex flex-col gap-3 rounded-lg border border-white/10 bg-white/[0.025] px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
 				>
 					<p className="font-mono text-xs tracking-[0.14em] text-zinc-400">
-						STACK STATUS
+						SKILL AREAS
 					</p>
 					<p className="flex items-center gap-2 text-sm text-zinc-300">
 						<span className="size-1.5 rounded-full bg-emerald-300" aria-hidden="true" />
-						8 technologies currently active
+						6 focused categories
 					</p>
 				</div>
 				</div>

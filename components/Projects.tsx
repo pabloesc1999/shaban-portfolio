@@ -7,7 +7,6 @@ const projects = [
 		description:
 			"A precision-focused Android calculator built with Kotlin, featuring BigDecimal arithmetic, chained calculations, operator swapping, divide-by-zero handling, and clean result formatting.",
 		technologies: ["Kotlin", "Android", "XML", "BigDecimal"],
-		githubUrl: "https://github.com/",
 		status: "COMPLETED",
 		index: "01",
 	},
@@ -16,7 +15,6 @@ const projects = [
 		description:
 			"An Android authentication practice project using Kotlin, SharedPreferences, and Intents to manage simple login state and screen navigation.",
 		technologies: ["Kotlin", "Android", "SharedPreferences", "Intents"],
-		githubUrl: "https://github.com/",
 		status: "COMPLETED",
 		index: "02",
 	},
@@ -25,7 +23,6 @@ const projects = [
 		description:
 			"A simple Android counter application built to practice XML layouts, ConstraintLayout, button click handling, state updates, and UI interaction.",
 		technologies: ["Kotlin", "XML", "ConstraintLayout", "Android"],
-		githubUrl: "https://github.com/",
 		status: "COMPLETED",
 		index: "03",
 	},
@@ -43,6 +40,20 @@ const projects = [
 		githubUrl: "https://github.com/pabloesc1999/android-bottom-navigation",
 		status: "COMPLETED",
 		index: "04",
+	},
+	{
+		title: "GFC Financial Chatbot",
+		description:
+			"A rule-based financial chatbot prototype that applies financial data analysis to user questions, with unit-tested conversational logic.",
+		technologies: [
+			"Python",
+			"Financial Data Analysis",
+			"Rule-Based Logic",
+			"Unit Testing",
+		],
+		githubUrl: "https://github.com/pabloesc1999/GFC-Financial-Chatbot",
+		status: "PROTOTYPE",
+		index: "05",
 	},
 ];
 
@@ -91,7 +102,7 @@ export default function Projects() {
 								PROJECT DATABASE
 							</p>
 							<p className="mt-2 font-mono text-[10px] tracking-wider text-cyan-300/80">
-								04 PROJECTS INDEXED
+								05 PROJECTS INDEXED
 							</p>
 						</div>
 						<p className="flex items-center gap-2 font-mono text-[10px] tracking-wider text-zinc-400 sm:text-xs">

@@ -17,7 +17,7 @@ export default function Contact() {
 			<div className="mx-auto max-w-6xl">
 				<div className="max-w-2xl">
 					<p className="font-mono text-xs tracking-[0.16em] text-cyan-300 sm:text-sm">
-						04 / CONTACT
+						05 / CONTACT
 					</p>
 					<h2
 						id="contact-title"

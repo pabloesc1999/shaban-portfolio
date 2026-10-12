@@ -6,6 +6,7 @@ const links = [
 	{ label: "About", href: "#about" },
 	{ label: "Stack", href: "#skills" },
 	{ label: "Projects", href: "#projects" },
+	{ label: "Certifications", href: "#certifications" },
 	{ label: "Contact", href: "#contact" },
 ];
 
@@ -15,7 +16,7 @@ export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	useEffect(() => {
-		const sectionIds = ["top", "about", "skills", "projects", "contact"];
+		const sectionIds = ["top", "about", "skills", "projects", "certifications", "contact"];
 		const sections = sectionIds
 			.map((id) => document.getElementById(id))
 			.filter((section): section is HTMLElement => section !== null);

@@ -20,6 +20,7 @@ export default function Footer() {
 								{ label: "ABOUT", href: "#about" },
 								{ label: "SKILLS", href: "#skills" },
 								{ label: "PROJECTS", href: "#projects" },
+								{ label: "CERTIFICATIONS", href: "#certifications" },
 								{ label: "CONTACT", href: "#contact" },
 							].map((link) => (
 								<li key={link.href}>

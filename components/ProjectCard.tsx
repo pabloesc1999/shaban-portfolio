@@ -2,7 +2,7 @@ type ProjectCardProps = {
 	title: string;
 	description: string;
 	technologies: string[];
-	githubUrl: string;
+	githubUrl?: string;
 	status: string;
 	index: string;
 };
@@ -48,7 +48,8 @@ export default function ProjectCard({
 				))}
 			</ul>
 
-			<div className="mt-auto pt-8">
+			{githubUrl && (
+				<div className="mt-auto pt-8">
 				<a
 					href={githubUrl}
 					target="_blank"
@@ -61,7 +62,8 @@ export default function ProjectCard({
 						↗
 					</span>
 				</a>
-			</div>
+				</div>
+			)}
 		</article>
 	);
 }
