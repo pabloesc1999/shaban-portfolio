@@ -1,111 +1,85 @@
-Shaban Portfolio
+# Shaban Portfolio
 
-A modern, futuristic developer portfolio built with Next.js, TypeScript, and Tailwind CSS.
+> A modern, futuristic developer portfolio built with Next.js, TypeScript, and Tailwind CSS.
 
-Live Website: https://shaban-portfolio-tau.vercel.app/
+**Live Website:** https://shaban-portfolio-tau.vercel.app/
 
-Overview
+---
+
+## Overview
 
 This repository contains my personal developer portfolio, built to showcase my technical skills, practical projects, certifications and virtual job simulations, and development journey.
 
 The portfolio features a futuristic dark interface with subtle glassmorphism, cyan accents, terminal-inspired elements, responsive layouts, and restrained animations.
 
-My primary focus is Android development with Kotlin, alongside modern web development, Python, and practical applications of generative AI and data analytics.
+My primary focus is **Android development with Kotlin**, alongside modern web development, Python, and practical applications of generative AI and data analytics.
 
-Features
+---
 
-Responsive layouts for desktop, tablet, and mobile
+## Features
 
-Futuristic dark UI with glassmorphism and cyan accents
+- Responsive layouts for desktop, tablet, and mobile
+- Futuristic dark UI with glassmorphism and cyan accents
+- Terminal-inspired developer interface
+- Smooth section navigation
+- Scroll-based reveal animations
+- Responsive mobile navigation
+- Keyboard-friendly navigation and visible focus states
+- Reduced-motion support
+- Interactive project cards
+- Dedicated skills and certifications sections
+- Certificate viewing through linked PDF files
+- GitHub, LinkedIn, and email contact links
+- Production deployment through Vercel
+- GitHub-based deployment workflow
 
-Terminal-inspired developer interface
+---
 
-Smooth section navigation
+## Tech Stack
 
-Scroll-based reveal animations
+### Frontend Development
 
-Responsive mobile navigation
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- HTML
+- CSS
 
-Keyboard-friendly navigation and visible focus states
+### Android Development
 
-Reduced-motion support
+- Kotlin
+- Android SDK
+- XML layouts
+- ConstraintLayout
+- Android Fragments
+- Navigation Component
+- SharedPreferences
+- Intents
+- BigDecimal arithmetic
 
-Interactive project cards
+### Python and AI
 
-Dedicated skills and certifications sections
+- Python
+- Automated testing with pytest
+- Rule-based chatbot development
+- Generative AI concepts
+- AI-assisted workflows
+- Data analysis fundamentals
 
-Certificate viewing through linked PDF files
+### Tools and Platforms
 
-GitHub, LinkedIn, and email contact links
+- Git
+- GitHub
+- Visual Studio Code
+- Android Studio
+- Vercel
 
-Production deployment through Vercel
+---
 
-GitHub-based deployment workflow
+## Project Structure
 
-Tech Stack
-
-Frontend Development
-
-Next.js
-
-React
-
-TypeScript
-
-Tailwind CSS
-
-HTML
-
-CSS
-
-Android Development
-
-Kotlin
-
-Android SDK
-
-XML layouts
-
-ConstraintLayout
-
-Android Fragments
-
-Navigation Component
-
-SharedPreferences
-
-Intents
-
-BigDecimal arithmetic
-
-Python and AI
-
-Python
-
-Automated testing with pytest
-
-Rule-based chatbot development
-
-Generative AI concepts
-
-AI-assisted workflows
-
-Data analysis fundamentals
-
-Tools and Platforms
-
-Git
-
-GitHub
-
-Visual Studio Code
-
-Android Studio
-
-Vercel
-
-Project Structure
-
+```text
 shaban-portfolio/
 ├── app/
 │   ├── globals.css
@@ -129,224 +103,195 @@ shaban-portfolio/
 ├── next.config.ts
 ├── tsconfig.json
 └── README.md
+```
 
-Note: The structure above highlights the main application files. Additional configuration files and assets may also be present.
+*Note: The structure above highlights the main application files. Additional configuration files and assets may also be present.*
 
-Featured Projects
+---
 
-1. Simple Calculator
+## Featured Projects
+
+### 1. Simple Calculator
 
 A Kotlin-based Android calculator focused on precision-safe arithmetic and practical application logic.
 
-Key features:
+**Key features:**
+- Arithmetic operations using `BigDecimal`
+- Chained calculations
+- Operator switching
+- Division-by-zero handling
+- Formatted numerical results
 
-Arithmetic operations using BigDecimal
+**Technologies:** `Kotlin` `Android` `XML` `BigDecimal`
 
-Chained calculations
-
-Operator switching
-
-Division-by-zero handling
-
-Formatted numerical results
-
-Technologies: Kotlin Android XML BigDecimal
-
-2. LoginTask
+### 2. LoginTask
 
 An Android authentication practice project demonstrating local session persistence and screen navigation.
 
-Key features:
+**Key features:**
+- Android UI built with XML
+- Navigation using Intents
+- Local persistence with SharedPreferences
+- Basic login-flow practice
 
-Android UI built with XML
+**Technologies:** `Kotlin` `Android` `XML` `SharedPreferences` `Intents`
 
-Navigation using Intents
+*Note: This is a learning project, not a production-ready authentication system.*
 
-Local persistence with SharedPreferences
-
-Basic login-flow practice
-
-Technologies: Kotlin Android XML SharedPreferences Intents
-
-Note: This is a learning project, not a production-ready authentication system.
-
-3. Counter App
+### 3. Counter App
 
 A simple Android application demonstrating interactive UI elements and state updates.
 
-Key features:
+**Key features:**
+- Button click handling
+- Counter value updates
+- ConstraintLayout-based interface
+- Basic application state management
 
-Button click handling
+**Technologies:** `Kotlin` `Android` `XML` `ConstraintLayout`
 
-Counter value updates
-
-ConstraintLayout-based interface
-
-Basic application state management
-
-Technologies: Kotlin Android XML ConstraintLayout
-
-4. Android Bottom Navigation
+### 4. Android Bottom Navigation
 
 A single-activity Android application demonstrating navigation between Home, Search, and Bookmark screens.
 
-Key features:
+**Key features:**
+- Fragment-based navigation
+- Navigation graph configuration
+- NavHostFragment and NavController
+- BottomNavigationView integration
 
-Fragment-based navigation
+**Technologies:** `Kotlin` `Android` `Navigation Component` `Fragments` `BottomNavigationView`
 
-Navigation graph configuration
+**GitHub:** https://github.com/pabloesc1999/android-bottom-navigation
 
-NavHostFragment and NavController
-
-BottomNavigationView integration
-
-Technologies: Kotlin Android Navigation Component Fragments BottomNavigationView
-
-GitHub: https://github.com/pabloesc1999/android-bottom-navigation
-
-5. GFC Financial Chatbot
+### 5. GFC Financial Chatbot
 
 A Python-based financial chatbot prototype designed to answer predefined questions about company financial data.
 
-Key features:
+**Key features:**
+- Rule-based question handling
+- Financial data covering Microsoft, Tesla, and Apple for fiscal years 2023–2025
+- Automated test suite with 21 passing tests
+- Structured responses for supported financial queries
 
-Rule-based question handling
+**Technologies:** `Python` `Financial Data` `pytest` `Rule-Based Chatbot`
 
-Financial data covering Microsoft, Tesla, and Apple for fiscal years 2023–2025
+**GitHub:** https://github.com/pabloesc1999/GFC-Financial-Chatbot
 
-Automated test suite with 21 passing tests
+*Note: The chatbot is a prototype using predefined data, not a live financial-data service or an LLM-powered financial advisor.*
 
-Structured responses for supported financial queries
+---
 
-Technologies: Python Financial Data pytest Rule-Based Chatbot
-
-GitHub: https://github.com/pabloesc1999/GFC-Financial-Chatbot
-
-Note: The chatbot is a prototype using predefined data, not a live financial-data service or an LLM-powered financial advisor.
-
-Certifications and Virtual Job Simulations
+## Certifications and Virtual Job Simulations
 
 I have completed virtual job simulations and learning experiences covering software engineering, generative AI, analytics, cybersecurity, and business technology.
 
-Organization
+| Organization | Simulation |
+|---|---|
+| BCG X | Generative AI |
+| Tata | GenAI-Powered Data Analytics |
+| Walmart Global Tech | Advanced Software Engineering |
+| Vista Equity Partners | AI in Action |
+| EAB | GenAI for Proposal Generation |
+| Mastercard | Cybersecurity |
 
-Simulation
+Certificate documents are available in the portfolio's `public/certificates/` directory and through the website's certifications section.
 
-BCG X
+**Portfolio:** https://shaban-portfolio-tau.vercel.app/
 
-Generative AI
+**Forage simulations:** https://www.theforage.com/simulations?qfilter=completed
 
-Tata
+---
 
-GenAI-Powered Data Analytics
-
-Walmart Global Tech
-
-Advanced Software Engineering
-
-Vista Equity Partners
-
-AI in Action
-
-EAB
-
-GenAI for Proposal Generation
-
-Mastercard
-
-Cybersecurity
-
-Certificate documents are available in the portfolio's public/certificates/ directory and through the website's certifications section.
-
-Portfolio: https://shaban-portfolio-tau.vercel.app/
-
-Forage simulations: https://www.theforage.com/simulations?qfilter=completed
-
-Design Philosophy
+## Design Philosophy
 
 The portfolio uses a technical, futuristic visual identity rather than a conventional template.
 
 Its design system includes:
 
-Deep dark backgrounds
-
-Subtle cyan accents
-
-Glass-inspired panels
-
-Thin borders and restrained glow effects
-
-Terminal-inspired components
-
-Responsive spacing and typography
-
-Carefully controlled animations
+- Deep dark backgrounds
+- Subtle cyan accents
+- Glass-inspired panels
+- Thin borders and restrained glow effects
+- Terminal-inspired components
+- Responsive spacing and typography
+- Carefully controlled animations
 
 The goal is to create a distinctive developer portfolio without compromising readability, accessibility, or usability.
 
-Accessibility and Responsive Design
+---
+
+## Accessibility and Responsive Design
 
 Accessibility and responsive behavior are important considerations in the interface.
 
 Implemented considerations include:
 
-Semantic HTML structure
+- Semantic HTML structure
+- Visible keyboard focus states
+- Accessible navigation controls
+- Appropriate ARIA attributes
+- Keyboard-friendly mobile navigation
+- Reduced-motion support
+- Text contrast and readable typography
+- Responsive layouts and touch-friendly controls
 
-Visible keyboard focus states
+The interface has been considered across viewport widths including `320px`, `375px`, `390px`, `430px`, `768px`, `1024px`, and `1440px`.
 
-Accessible navigation controls
+---
 
-Appropriate ARIA attributes
+## Local Development
 
-Keyboard-friendly mobile navigation
+### Prerequisites
 
-Reduced-motion support
+- Node.js
+- npm
+- Git
 
-Text contrast and readable typography
+### Clone the repository
 
-Responsive layouts and touch-friendly controls
-
-The interface has been considered across viewport widths including 320px, 375px, 390px, 430px, 768px, 1024px, and 1440px.
-
-Local Development
-
-Prerequisites
-
-Node.js
-
-npm
-
-Git
-
-Clone the repository
-
+```bash
 git clone https://github.com/pabloesc1999/shaban-portfolio.git
 cd shaban-portfolio
+```
 
-Install dependencies
+### Install dependencies
 
+```bash
 npm install
+```
 
-Start the development server
+### Start the development server
 
+```bash
 npm run dev
+```
 
 Open http://localhost:3000 in your browser.
 
-Production Build
+---
+
+## Production Build
 
 Create an optimized production build:
 
+```bash
 npm run build
+```
 
 Run the production build locally:
 
+```bash
 npm run start
+```
 
-Deployment Workflow
+---
+
+## Deployment Workflow
 
 The portfolio is deployed through Vercel and connected to GitHub.
 
+```text
 PLAN
   ↓
 BUILD
@@ -362,38 +307,37 @@ PUSH TO GITHUB
 DEPLOY WITH VERCEL
   ↓
 LIVE PORTFOLIO
+```
 
 Pushes to the configured production branch can trigger a new deployment. Deployment behavior depends on the Vercel project configuration.
 
-Live Website: https://shaban-portfolio-tau.vercel.app/
+**Live Website:** https://shaban-portfolio-tau.vercel.app/
 
-Future Improvements
+---
 
-More Android and full-stack projects
+## Future Improvements
 
-Detailed project case studies
+- More Android and full-stack projects
+- Detailed project case studies
+- Individual project pages
+- Improved project filtering
+- Additional interactive components
+- Further performance and accessibility improvements
+- Custom domain
+- Expanded testing and monitoring
 
-Individual project pages
+---
 
-Improved project filtering
+## Contact
 
-Additional interactive components
-
-Further performance and accessibility improvements
-
-Custom domain
-
-Expanded testing and monitoring
-
-Contact
-
-Shaban Saeed
+**Shaban Saeed**  
 Android Developer focused on Kotlin and modern software development.
 
-Portfolio: https://shaban-portfolio-tau.vercel.app/
+- **Portfolio:** https://shaban-portfolio-tau.vercel.app/
+- **GitHub:** https://github.com/pabloesc1999
+- **LinkedIn:** https://www.linkedin.com/in/m-shaban-saeed-80b5a2316/
 
-GitHub: https://github.com/pabloesc1999
+---
 
-LinkedIn: https://www.linkedin.com/in/m-shaban-saeed-80b5a2316/
+> Building practical software, strengthening fundamentals, and continuously learning.
 
-Building practical software, strengthening fundamentals, and continuously learning.
